@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvMainHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/main_title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/tvAuthorName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/author_label"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="#555555"
+        app:layout_constraintTop_toBottomOf="@id/tvMainHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Przycisk 1: Intencja Jawna -->
+    <Button
+        android:id="@+id/btnExplicitIntent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_explicit_intent"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/tvAuthorName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp" />
+
+    <!-- Przycisk 2: Intencja Niejawna z adresem URL -->
+    <EditText
+        android:id="@+id/etWebUrl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/url_hint"
+        android:text="@string/default_url"
+        android:inputType="textUri"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/btnExplicitIntent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <Button
+        android:id="@+id/btnImplicitIntent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_implicit_intent"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/etWebUrl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Przycisk 3: Aktywność GPS -->
+    <Button
+        android:id="@+id/btnGpsActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_gps_activity"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/btnImplicitIntent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Intencje</string>
+    <string name="author_name">Mikołaj Drzewiński</string>
+    <string name="main_title">Laboratorium 3 – Intencje</string>
+    <string name="author_label">Autor: Mikołaj Drzewiński</string>
+    <string name="btn_explicit_intent">Otwórz Aktywność 1 (Intencja Jawna)</string>
+    <string name="btn_implicit_intent">Otwórz Przeglądarkę (Intencja Niejawna)</string>
+    <string name="btn_gps_activity">Otwórz Aktywność 3 (Lokalizacja GPS)</string>
+    <string name="url_hint">Wprowadź adres URL (np. https://google.pl)</string>
+    <string name="default_url">https://www.google.pl</string>
+    <string name="second_activity_title">Aktywność Pierwsza</string>
+    <string name="back_instruction">Kliknij przycisk back by wrócić do poprzedniego ekranu</string>
+    <string name="btn_back">Wróć do ekranu głównego</string>
+    <string name="third_activity_title">Lokalizator GPS</string>
+    <string name="btn_start_gps">Start GPS</string>
+    <string name="btn_stop_gps">Stop GPS</string>
+    <string name="gps_status_idle">Stan GPS: Bezczynny</string>
+    <string name="gps_status_active">Stan GPS: Pobieranie lokalizacji...</string>
+    <string name="gps_status_stopped">Stan GPS: Zatrzymany</string>
+    <string name="gps_status_permission_denied">Stan GPS: Brak uprawnień do lokalizacji</string>
+    <string name="latitude_label">Szerokość geograficzna: %1$s</string>
+    <string name="longitude_label">Długość geograficzna: %1$s</string>
+    <string name="latitude_default">Szerokość geograficzna: --</string>
+    <string name="longitude_default">Długość geograficzna: --</string>
+</resources>

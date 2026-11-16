@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/thirdConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".ThirdActivity">
+
+    <TextView
+        android:id="@+id/tvThirdTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/third_activity_title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/tvGpsStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/gps_status_idle"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColor="#333333"
+        app:layout_constraintTop_toBottomOf="@id/tvThirdTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/tvLatitudeValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/latitude_default"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#0D47A1"
+        app:layout_constraintTop_toBottomOf="@id/tvGpsStatus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/tvLongitudeValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/longitude_default"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#0D47A1"
+        app:layout_constraintTop_toBottomOf="@id/tvLatitudeValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Przyciski Start i Stop GPS -->
+    <LinearLayout
+        android:id="@+id/llGpsButtonsContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tvLongitudeValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="48dp">
+
+        <Button
+            android:id="@+id/btnStartGps"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="@string/btn_start_gps"
+            android:enabled="true"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btnStopGps"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="@string/btn_stop_gps"
+            android:enabled="false"
+            android:padding="12dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
